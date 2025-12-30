@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>連江縣氣候變遷概述</title>
+    <style>
+        body { font-family: "Microsoft JhengHei", Arial, sans-serif; margin: 0; padding: 0; background-color: #fcebeb; display: flex; justify-content: center; }
+        .container { background-color: #ffffff; width: 90%; max-width: 1200px; margin: 40px 0; padding: 40px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        h1.main-title { text-align: center; color: #b73e3e; font-size: 32px; margin-bottom: 40px; position: relative; display: inline-block; left: 50%; transform: translateX(-50%); }
+        h1.main-title::after { content: ''; display: block; width: 60px; height: 4px; background-color: #d67a7a; margin: 10px auto 0; }
+        h2.sub-title { color: #8b0000; font-size: 24px; margin-bottom: 20px; border-left: 5px solid #b73e3e; padding-left: 10px; }
+        p.content-text { line-height: 1.8; color: #333; font-size: 16px; margin-bottom: 30px; text-align: justify; }
+        .charts-row { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+        .chart-card { flex: 1; min-width: 250px; background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 10px; text-align: center; }
+        .chart-header { display: flex; justify-content: space-between; background-color: #eee; padding: 8px 15px; border-radius: 5px; font-weight: bold; color: #555; margin-bottom: 10px; }
+        .chart-header span.unit { font-size: 12px; color: #888; align-self: center; }
+        .chart-img { width: 100%; height: auto; border-radius: 4px; min-height: 200px; object-fit: contain; }
+        .caption { font-size: 13px; color: #666; margin-top: 10px; }
+        @media (max-width: 768px) { .container { width: 95%; padding: 20px; } .charts-row { flex-direction: column; } }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1 class="main-title">連江縣氣候變遷概述</h1>
+    <h2 class="sub-title">主題一、地理位置與氣候特徵</h2>
+    <p class="content-text">
+        連江縣（馬祖列島）位於臺灣海峽西北方，主要由南竿、北竿、莒光及東引等島嶼組成。地形多屬丘陵，起伏較大，少有平地。
+        氣候屬亞熱帶海洋性氣候，受海洋調節與季風影響顯著，四季分明。
+        <strong>年平均氣溫約 18.6°C 至 19°C</strong>，較臺灣本島低；<strong>年降雨量約 1,000 毫米</strong>，遠少於臺灣平均（約 2,500 毫米）。
+        冬季受強烈東北季風影響，風勢強勁且寒冷乾燥；降雨主要集中於 4 至 6 月的梅雨季及夏季颱風，秋冬則有明顯乾季，水資源保存不易。
+    </p>
+
+    <div class="charts-row">
+        <div class="chart-card">
+            <div class="chart-header"><span>地形圖</span><span class="unit">高度(公尺)</span></div>
+            <img src="map1.jpg" alt="連江縣地形圖" class="chart-img">
+            <div class="caption">圖：連江縣地形圖</div>
+        </div>
+
+        <div class="chart-card">
+            <div class="chart-header"><span>年平均溫度</span><span class="unit">°C</span></div>
+            <img src="map2.jpg" alt="年平均溫度" class="chart-img">
+            <div class="caption">圖：年平均溫度圖</div>
+        </div>
+
+        <div class="chart-card">
+            <div class="chart-header"><span>年降雨量</span><span class="unit">毫米</span></div>
+            <img src="map3.jpg" alt="年降雨量" class="chart-img">
+            <div class="caption">圖：年平均降雨量圖</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
